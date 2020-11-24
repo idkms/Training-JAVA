@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class UsingScanner {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Personal Informations");
+		
+		System.out.println("1.name: ");
+		String name = scanner.nextLine();
+		
+		System.out.println("2.social security number: ");
+		String ssn = scanner.nextLine();
+		
+		System.out.println("3.phone number: ");
+		String tel = scanner.nextLine();
+
+		System.out.println("Personal Informations");
+		System.out.println("1.name: " + name);
+		System.out.println("2.social security number: " + ssn);
+		System.out.println("3.phone number: " + tel);
+	}
+
+}
