@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class ATM {
+
+	public static void main(String[] args) {
+		boolean run = true;
+		
+		int balance = 0;
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		while(run) {
+			System.out.println("-----------");
+			System.out.println("1.Deposit | 2.Withdraw | 3.Balance | 4.Exit");
+			System.out.println("-----------");
+			System.out.println("Choose> ");
+			
+			int menuNum = Integer.parseInt(scanner.nextLine());
+			
+			switch(menuNum) {
+			case 1:
+				System.out.print("Deposit amount> ");
+				balance += Integer.parseInt(scanner.nextLine());
+				break;
+			case 2:
+				System.out.print("Withdrawals> ");
+				balance -= Integer.parseInt(scanner.nextLine());
+				break;
+			case 3:
+				System.out.print("Balance> ");
+				System.out.println(balance);
+				break;
+			case 4:	
+				run = false;
+				break;
+			}
+			
+			System.out.println();
+		}
+		
+		System.out.println("Exit program");
+	}
+
+}
