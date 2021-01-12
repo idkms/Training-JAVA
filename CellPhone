@@ -1,0 +1,14 @@
+public class CellPhone {
+//feild
+	String model;
+	String color;
+//ctor
+	
+//method
+	void powerOn() {System.out.println("turn on.");}
+	void powerOff() {System.out.println("turn off.");}
+	void bell() {System.out.println("bell rings");}
+	void sendVoice(String message) {System.out.println("me: " + message);}
+	void receiveVoice(String message) {System.out.println("opponent: " + message);}
+	void hangUp() {System.out.println("Hang up the phone.");}
+}
