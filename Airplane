@@ -1,0 +1,14 @@
+public class Airplane {	
+	
+	public void land() {
+		System.out.println("Land.");
+	}
+	
+	public void fly() {
+		System.out.println("Regular Flight.");
+	}
+	
+	public void takeOff() {
+		System.out.println("Fly.");
+	}
+}
